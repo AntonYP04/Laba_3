@@ -34,10 +34,10 @@ SUITE (KeyTest)
         CHECK_THROW(wst(k=-5,test), cipher_error);
     }
     TEST(LargeKey) {
-        CHECK_THROW(wst(k=12,test), cipher_error);
+        CHECK_THROW(wst(k=55,test), cipher_error);
     }
     TEST(A_characters_in_the_key_instead_of_numbers) {
-        CHECK_THROW(wst(k=12,test), cipher_error);
+        CHECK_THROW(wst(k=1r,test), cipher_error);
     }
 }
 SUITE(EncryptTest)
